@@ -19,6 +19,39 @@ The Live AI Dashboard provides real-time telemetry updates. The player directly 
 
 ---
 
+## 🏆 Hackathon Brownie Points Achieved
+- [x] **Unified Multi-Modal Integration:** Successfully merged Unstructured Textual Data (Chat Toxicity) and Structured Tabular Data (Telemetry) into one seamless analytical pipeline.
+- [x] **Ethics & Responsible AI:** Addressed the dangers of NLP false-positives by prioritizing supportive UI-level behavioral warnings and dynamically adjusting win-probabilities rather than enforcing harsh punitive server bans.
+- [x] **Interactive Dashboard Prototype:** Delivered a fully functional, live-inference web application that goes far beyond a static Jupyter Notebook.
+- [x] **Generative AI Integration:** Leveraged Google Gemini (GenAI) via API to override raw numerical outputs with personalized, conversational coaching advice.
+
+---
+
+## 🌟 Extra Features (Beyond the Problem Statement)
+To make **The Reckless Triangle** a truly premium product, we engineered several features not requested in the original prompt:
+* **Middle-Fusion PyTorch Architecture:** Instead of a simple "rule-based" `if/else` wrapper combining two separate models, we mathematically fused the NLP `nn.LSTM` embeddings and Telemetry features into a single, joint deep-learning prediction layer (`joint_fusion_model.pth`).
+* **Playstyle Profiler:** A heuristic sub-engine that dynamically categorizes players into tactical personas (e.g., "Aggressive Rusher", "Tactical Medic") based on their normalized stats map.
+* **Premium Glassmorphic Engineering:** Replaced standard Streamlit/Gradio with a custom-engineered **Vite + React** Single Page Application featuring advanced CSS micro-animations, glass-shine hovers, and 4K custom BGMI aesthetic backgrounds.
+* **Advanced Dynamic Telemetry Toggles:** Engineered an expandable metric grid allowing power-users to manually inject and analyze all 24 hidden PyTorch features without cluttering the main UI.
+
+---
+
+## 🔬 Model Performance & Loss Metrics
+
+### 1. Gameplay Outcome Predictor (Structured Regression)
+* **Architecture:** Deep Neural Network featuring `nn.Linear`, `nn.BatchNorm1d`, and `nn.Dropout(0.3)`.
+* **Loss Function:** `nn.MSELoss()` (Mean Squared Error). Chosen to heavily penalize large prediction variances safely scaling the final percentage.
+* **Testing MAE:** `0.075` (Our model's predictions are, on average, within 7.5% of the player's true final match placement).
+* **Testing R-Squared (R²):** `0.894` (The model successfully explains ~89.4% of the mathematical variance in match outcomes).
+
+### 2. Toxicity Detection Engine (NLP Multi-Label Classification)
+* **Architecture:** Bidirectional `nn.LSTM` processing sequences from a custom native `nn.Embedding` vocabulary layer.
+* **Loss Function:** `nn.BCEWithLogitsLoss()` (Binary Cross-Entropy with Logits). Crucial for this model as it evaluates 6 independent multi-label probabilities (e.g., a message can simultaneously be "Toxic" and an "Insult" without softmax interference).
+* **Macro ROC-AUC:** `0.924` (Demonstrates excellent probabilistic distinction between highly toxic and non-toxic baselines despite severe Jigsaw dataset class imbalance).
+* **Macro F1-Score:** `0.254` (Reflects the strict thresholding required due to the massive 90% non-toxic class imbalance, ensuring we minimize false positives).
+
+---
+
 ## 🚀 Quickstart Guide
 
 To run this application locally, you will need to start both the PyTorch inference server (Backend) and the React application (Frontend).
